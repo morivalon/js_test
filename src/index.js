@@ -128,3 +128,65 @@
 
 // const arr7 = [...arr4,...arr5];
 // console.log(arr7);
+
+//**mapやfilterを使った配列処理 */
+
+// 配列を一つを用意する
+// const nameArr = ["John", "May", "tenten"];
+
+// //従来
+// for (let index = 0; index < nameArr.length; index++) {
+//   console.log(nameArr[index]);
+// }
+
+// //map基本的な構文
+// const nameArr2 = nameArr.map((name) => {
+//   return name;
+// });
+// console.log(nameArr2);
+
+// //map
+// nameArr.map((name) => console.log(name));
+
+// //filter　ある条件に一致するものだけ取り出す　（以下例は奇数）
+// const numArr = [1, 2, 3, 4, 5];
+// const newNumArr = numArr.filter((num) => {
+//   return num % 2 === 1;
+// });
+// console.log(newNumArr);
+
+// //例：何番目は誰です (従来)
+// for (let index = 0; index < nameArr.length; index++) {
+//   console.log(`${index + 1}番目は${nameArr[index]}です。`);
+// }
+
+// //例：何番目は誰です（mapの場合）→引数二つ
+// nameArr.map((name, index) => console.log(`${index + 1}番目は${name}です。`));
+
+//自分の名前以外は語尾さんをつく　map
+// const newNameArr = nameArr.map((name)=>{
+//   if (name === "tenten"){
+//     return name;
+//   }else{
+//     return `${name}さん`
+//   }
+// })
+// console.log(newNameArr);
+
+//**三項演算子 */
+//ある条件？条件がtrueの時：条件がfalseの時
+// const val1 = 1 > 0 ? 'trueです' : 'falseです' ;
+// console.log(val1);
+
+// const num = 1300;
+// console.log(num.toLocaleString());
+// // 上面注意toLocaleString只能表示数字
+
+// const num2 = 2333;
+// const newNum = typeof num2 === 'number' ? num2.toLocaleString() : '数値入力';
+// console.log(newNum);
+
+// const checkSum = (num1, num2) => {
+//   return num1 + num2 > 100 ? "100超えています！" : "許容範囲内です";
+// };
+// console.log(checkSum(50, 40));
