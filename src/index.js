@@ -190,3 +190,26 @@
 //   return num1 + num2 > 100 ? "100超えています！" : "許容範囲内です";
 // };
 // console.log(checkSum(50, 40));
+
+//**  論理演算子（逻辑运算符）*/
+// A||B または　　　A&&B　かつ
+// const flag1 = true;
+// const flag2 = false;
+
+// if (flag1 || flag2) {
+//   console.log("１か２はtrueになります");
+// }
+
+// if (flag1 && flag2) {
+//   console.log("１も２はtrueになります");
+// }
+
+// // ||は左側がfalseなら右側を返す
+// const num = null;
+// const fee = num || "金額未設定です";
+// console.log(fee);
+
+// // &&は左側がtrueなら右側を返す
+// const num2 = null;
+// const fee2 = num2 && "何か設定されました";
+// console.log(fee2);
